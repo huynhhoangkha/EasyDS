@@ -1,0 +1,8 @@
+(version 1)
+
+(rule "Diff_Pair_USB90"
+  (constraint diff_pair_gap (min 0.12mm) (opt 0.15mm) (max 0.18mm))
+  (constraint track_width (min 0.18mm) (opt 0.2mm) (max 0.22mm))
+  (constraint clearance (min 0.2mm))
+  (condition "A.NetClass == 'USB_90OHM'")
+)
